@@ -9,18 +9,19 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^20.5.9",
-    "@types/youtube-player": "^5.5.7",
+    "@types/node": "^25.0.3",
+    "@types/youtube-player": "^5.5.11",
     "@types/fs-extra": "^11.0.4",
-    "js-beautify": "^1.14.9",
-    "terser": "^5.26.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.5",
-    "vite-plugin-external": "^4.0.1"
+    "js-beautify": "^1.15.4",
+    "terser": "^5.44.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vite-plugin-external": "^6.2.2"
   },
   "dependencies": {
-    "fs-extra": "^11.2.0",
     "@splidejs/splide": "^4.1.4",
+    "badlib": "^0.1.4",
+    "fs-extra": "^11.3.3",
     "youtube-player": "^5.6.0"
   }
 }

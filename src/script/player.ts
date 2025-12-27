@@ -1,20 +1,21 @@
+import { tryCatch } from "badlib";
 import config from "config";
-import YouTubePlayer from "youtube-player";
-export const player = YouTubePlayer("video-player");
+export const player = document.querySelector("#player") as HTMLAudioElement;
 
 async function startAutoPlay() {
+  if (!player) return;
   const muted = localStorage.getItem("muted");
 
-  if (muted !== null) {
-    await player.setVolume(0);
+  if (muted) {
+    player.volume = 0;
   } else {
-    await player.setVolume(config.defaultVolume);
+    player.volume = config.defaultVolume / 100;
   }
 
-  await player.loadVideoById(config.videoID);
-  await player.playVideo();
+  player.src = config.audioLink;
+  tryCatch(player.play());
   document.onclick = async () => {
-    await player.playVideo();
+    player.play();
   };
 }
 

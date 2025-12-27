@@ -1,11 +1,10 @@
 const config = {
-  // Video ID for background audio playing.
-  // Can find it from https://www.youtube.com/watch?v=VIDEOIDHERE
-  videoID: "wZexQtMd-UI",
+  // Direct audio/radio link
+  audioLink: "https://s2.radio.co/s2b2b68744/listen",
 
   // Background audio volume.
   // Range: 0-100.
-  defaultVolume: 10,
+  defaultVolume: 2,
 
   // Images blur.
   // Values in px.

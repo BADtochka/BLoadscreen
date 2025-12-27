@@ -90,12 +90,12 @@ async function switchMute() {
   const muted = localStorage.getItem("muted");
 
   if (muted) {
-    await player.setVolume(config.defaultVolume);
+    player.volume = config.defaultVolume / 100;
     localStorage.removeItem("muted");
     changeMuteButton(null);
   } else {
     localStorage.setItem("muted", "true");
-    await player.setVolume(0);
+    player.volume = 0;
     changeMuteButton("true");
   }
 }
