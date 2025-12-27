@@ -4,7 +4,7 @@ const config = {
 
   // Background audio volume.
   // Range: 0-100.
-  defaultVolume: 2,
+  defaultVolume: 5,
 
   // Images blur.
   // Values in px.
